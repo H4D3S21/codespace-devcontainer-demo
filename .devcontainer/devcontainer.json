@@ -1,9 +1,6 @@
 {
   "name": "ga2-fa3409",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {}
-  },
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,5 +9,5 @@
       ]
     }
   },
-  "postCreateCommand": "python3 -m ensurepip --upgrade && python3 -m pip install --upgrade pip && python3 -m pip install fastapi"
+  "postCreateCommand": "python3 -m pip install --upgrade pip && python3 -m pip install uv && uv pip install fastapi"
 }
