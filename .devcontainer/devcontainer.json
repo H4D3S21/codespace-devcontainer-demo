@@ -1,6 +1,9 @@
 {
   "name": "ga2-fa3409",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
